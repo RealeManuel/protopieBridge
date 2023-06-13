@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ProtoPie Connect Socket.IO Sample</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://freshfork.github.io/p5.EasyCam/p5.easycam.js"></script>
+  <link rel="stylesheet" href="main.css">
+  
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+
+  <!-- <h1>ProtoPie Connect Socket.IO Sample</h1> -->
+
+  <div class="main">
+    <div class="state-initial">
+      <h2>Connect</h2>
+
+      <form id="form-connect" action="">
+        <input id="address" placeholder="address" value="http://localhost:9981" />
+        <button>Connect</button>
+      </form>
+    </div>
+
+    <div class="state-connecting">
+      Connecting ...
+    </div>
+
+    <!-- <div class="state-connected">
+      <div class="send">
+        <h2>Send</h2>
+        <form id="form-send" action="">
+          <input id="messageId" placeholder="messageId" />
+          <input id="value" placeholder="value" />
+          <button>Send</button>
+        </form>
+      </div>
+
+      <div class="received">
+        <h2>Received</h2>
+        <div id="messages"></div>
+      </div>
+    </div> -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.slim.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
